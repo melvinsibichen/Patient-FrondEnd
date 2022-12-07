@@ -33,6 +33,21 @@ eventEntry=()=>
     (response:any)=>
     {
       console.log(response)
+      if(response.status=="success")
+      {
+        alert("added successfully")
+        this.username=""
+        this.ids=""
+        this.address=""
+        this.number=""
+        this.date=""
+        this.image=""
+        this.doctor=""
+
+      }
+      else{
+        alert("something went wrong")
+      }
     }
    )
 }
